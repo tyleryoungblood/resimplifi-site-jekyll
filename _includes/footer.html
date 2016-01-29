@@ -1,48 +1,47 @@
-<div class="wrapper-footer">
-  <div class="container">
-    <footer class="footer">
+<footer class="footer">
 
-      <section class="newsletter">
-        <div class="logo">
-          <a href="{{ site.baseurl }}/"><img src="images/logo-dark.svg"></a>
-        </div>
-        <form action="">
-          <input type="text">
-          <input type="submit">
-        </form>
-      </section>
+  <section class="newsletter">
+    <div class="logo">
+      <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-dark.svg"></a>
+    </div>
+    <form action="">
+      <input type="text">
+      <input type="submit">
+    </form>
+  </section>
 
-      <section class="links">
+  <section class="links">
 
-        <ul>
-          <li><a href="{{ site.baseurl }}/pricing">Pricing</a></li>
-          <li><a href="{{ site.baseurl }}/customers">Customers</a></li>
-          <li><a href="{{ site.baseurl }}/About Us">About Us</a></li>
-          <!-- <li><a href="{{ site.baseurl }}/login">Log In</a></li> -->
-        </ul>
+    <ul>
+      <li><a href="{{ site.baseurl }}/pricing">Pricing</a></li>
+      <li><a href="{{ site.baseurl }}/customers">Customers</a></li>
+      <li><a href="{{ site.baseurl }}/About Us">About Us</a></li>
+      <!-- <li><a href="{{ site.baseurl }}/login">Log In</a></li> -->
+    </ul>
 
-      </section>
+  </section>
 
-      <section class="social">
-        {% if site.footer-links.dribbble %}<a href="https://dribbble.com/{{ site.footer-links.dribbble }}"><i class="svg-icon dribbble"></i></a>{% endif %}
-        {% if site.footer-links.email %}<a href="mailto:{{ site.footer-links.email }}"><i class="svg-icon email"></i></a>{% endif %}
-        {% if site.footer-links.facebook %}<a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="svg-icon facebook"></i></a>{% endif %}
-        {% if site.footer-links.flickr %}<a href="https://www.flickr.com/{{ site.footer-links.flickr }}"><i class="svg-icon flickr"></i></a>{% endif %}
-        {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}"><i class="svg-icon github"></i></a>{% endif %}
-        {% if site.footer-links.instagram %}<a href="https://instagram.com/{{ site.footer-links.instagram }}"><i class="svg-icon instagram"></i></a>{% endif %}
-        {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"><i class="svg-icon linkedin"></i></a>{% endif %}
-        {% if site.footer-links.pinterest %}<a href="https://www.pinterest.com/{{ site.footer-links.pinterest }}"><i class="svg-icon pinterest"></i></a>{% endif %}
-        {% if site.footer-links.rss %}<a href="{{ site.baseurl }}/feed.xml"><i class="svg-icon rss"></i></a>{% endif %}
-        {% if site.footer-links.twitter %}<a href="https://www.twitter.com/{{ site.footer-links.twitter }}"><i class="svg-icon twitter"></i></a>{% endif %}
-        {% if site.footer-links.stackoverflow %}<a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}"><i class="svg-icon stackoverflow"></i></a>{% endif %}
-        {% if site.footer-links.youtube %}<a href="https://youtube.com/{{ site.footer-links.youtube }}"><i class="svg-icon youtube"></i></a>{% endif %}
-        {% if site.footer-links.googleplus %}<a href="https://plus.google.com/{{ site.footer-links.googleplus }}"><i class="svg-icon googleplus"></i></a>{% endif %}
-      </section>
+  <section class="social">
+    {% if site.footer-links.dribbble %}<a href="https://dribbble.com/{{ site.footer-links.dribbble }}"><i class="svg-icon dribbble"></i></a>{% endif %}
+    {% if site.footer-links.email %}<a href="mailto:{{ site.footer-links.email }}"><i class="svg-icon email"></i></a>{% endif %}
+    {% if site.footer-links.facebook %}<a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="svg-icon facebook"></i></a>{% endif %}
+    {% if site.footer-links.flickr %}<a href="https://www.flickr.com/{{ site.footer-links.flickr }}"><i class="svg-icon flickr"></i></a>{% endif %}
+    {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}"><i class="svg-icon github"></i></a>{% endif %}
+    {% if site.footer-links.instagram %}<a href="https://instagram.com/{{ site.footer-links.instagram }}"><i class="svg-icon instagram"></i></a>{% endif %}
+    {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"><i class="svg-icon linkedin"></i></a>{% endif %}
+    {% if site.footer-links.pinterest %}<a href="https://www.pinterest.com/{{ site.footer-links.pinterest }}"><i class="svg-icon pinterest"></i></a>{% endif %}
+    {% if site.footer-links.rss %}<a href="{{ site.baseurl }}/feed.xml"><i class="svg-icon rss"></i></a>{% endif %}
+    {% if site.footer-links.twitter %}<a href="https://www.twitter.com/{{ site.footer-links.twitter }}"><i class="svg-icon twitter"></i></a>{% endif %}
+    {% if site.footer-links.stackoverflow %}<a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}"><i class="svg-icon stackoverflow"></i></a>{% endif %}
+    {% if site.footer-links.youtube %}<a href="https://youtube.com/{{ site.footer-links.youtube }}"><i class="svg-icon youtube"></i></a>{% endif %}
+    {% if site.footer-links.googleplus %}<a href="https://plus.google.com/{{ site.footer-links.googleplus }}"><i class="svg-icon googleplus"></i></a>{% endif %}
+  </section>
 
-      <section class="copyright">
-        <p>Copyright <script>document.write(new Date().getFullYear())</script> REsimplifi</p>
-      </section>
+  <section class="copyright">
+    <p>Copyright <script>document.write(new Date().getFullYear())</script> REsimplifi</p>
+  </section>
 
-    </footer>
-  </div>
-</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/scrollview.js"></script>
