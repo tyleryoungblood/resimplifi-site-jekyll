@@ -11,10 +11,16 @@ hr {
   color: $charcoal;
   background-color: $charcoal;
   width: 90%;
+  margin: 2em 0;
 }
 section hr {
   width: 100%;
 }
+
+p {
+  font-size: 1.3em;
+}
+
 h1 {
   font-size: 2.8em;
   color: $steel-blue;
@@ -25,14 +31,42 @@ a.button {
   display: inline-block;
   text-decoration: none;
   color: $steel-blue;
-  border: 2px solid steel-blue;
+  border: 2px solid $steel-blue;
   padding: 5px 20px;
-  margin: 0 auto;
+  margin: 1em auto;
   font-size: 1.2em;
   font-weight: bold;
   -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
 }
+.buttons {
+  max-width: 350px;
+  margin: 2em auto;
+
+  a.big-button + a.button {
+    margin-left: 0;
+
+  }
+
+  a.big-button + a.button + a.button {
+    margin-right: -0.32em;
+  }
+  a.button {
+    width: 48%;
+    text-align: center;
+
+
+    &.big-button {
+      width: 100%;
+      padding: 15px 30px;
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 1.8em;
+      margin-right: -0.32em;
+    }
+  }
+}
+
 a.button:hover {
   background-color: $steel-blue;
   color: $bright-color;
@@ -42,102 +76,7 @@ a.button:hover {
 a.button + a.button {
   margin-left: 1em;
 }
-header {
-  background-color: $steel-blue;
-  color: $bright-color;
-  height: 60px;
-}
-nav {
-  width: 90%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-nav .logo {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  color: $steel-blue;
-  line-height: 50px;
-  margin: 10px;
-  text-align: center;
-}
-nav ul {
-  display: inline-block;
-  top: 50%;
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  padding: 5px 10px;
-  text-decoration: none;
-  color: $bright-color;
-  padding: 5px 20px;
-  margin: 0 auto;
-  font-size: 1em;
-  font-weight: bold;
-}
-nav ul li a:hover {
-  text-decoration: underline;
-}
-nav ul li a.button {
-  color: $bright-color;
-  font-size: 1em;
-  border: 2px solid $bright-color;
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
-}
-nav ul li a.button:hover {
-  background-color: $bright-color;
-  color: $steel-blue;
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
-  text-decoration: none;
-}
-.hero {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: url("images/hero.png");
-  background-size: cover;
-  background-position: center;
-  height: calc(100vh - 60px);
-  text-align: center;
-}
-.hero h1 {
-  display: inline-block;
-  color: $steel-blue;
-  font-size: 5em;
-  margin: 0;
-}
-.hero h2 {
-  font-size: 1.2em;
-  color: $dark-color;
-  margin: 0.2em 0 1.5em 0;
-}
+
 .features {
   text-align: center;
 }
@@ -164,6 +103,7 @@ nav ul li a.button:hover {
 }
 .each-feature article {
   width: 33%;
+  display: inline-block;
 }
 .each-feature article img {
   width: 90%;
