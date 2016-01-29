@@ -1,6 +1,6 @@
 .hero {
-
   display: flex;
+  align-items: center;
   justify-content: center;
   background: url("images/hero.png");
   background-size: cover;
@@ -10,15 +10,16 @@
   margin: 0;
 
   h1 {
-    display: inline-block;
-    color: $steel-blue;
+    width: 100%;
     font-size: 5em;
     margin: 0;
   }
 
   h2 {
+    width: 100%;
     font-size: 1.2em;
     color: $dark-color;
-    margin: 0.2em 0 1.5em 0;
+    margin: 1em 0;
   }
+
 }
