@@ -36,9 +36,12 @@ unnecessary administrative downtime.</li>
 
   <section class="signature">
     <img class="headshot" src="../images/henry-photo.svg" alt="Henry Moore">
-    <p>Regards,</p>
-    <img class="signature" src="../images/signature.svg" alt="signature">
-    <p>H. Moore</p>
+    <div class="flex-col">
+      <p>Regards,</p>
+      <img class="signature" src="../images/signature.svg" alt="signature">
+      <p>H. Moore</p>
+    </div>
+
   </section>
 
 </section>

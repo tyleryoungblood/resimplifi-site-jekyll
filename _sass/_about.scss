@@ -1,4 +1,4 @@
-section.open-letter {
+.open-letter {
   background-color: $lightGray;
   display: block;
   margin: 4em;
@@ -17,22 +17,24 @@ section.open-letter {
 
 }
 
-section.signature {
-  display: block;
-  margin: 4em 0;
+.signature {
+  display: flex;
+  margin: 5em 0 0 0;
 
-  p {
-    margin: 2em 0;
-  }
-
-  img.headshot {
-    float: left;
+  .headshot {
     width: 150px;
     height: 150px;
     margin-right: 2em;
   }
 
   img.signature {
-    height: 4em;
+    margin: 0;
   }
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 }
