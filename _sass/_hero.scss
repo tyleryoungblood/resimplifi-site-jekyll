@@ -1,31 +1,24 @@
 .hero {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background: url("images/hero.png");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 60px);
   text-align: center;
-}
-.hero h1 {
-  display: inline-block;
-  color: $steel-blue;
-  font-size: 5em;
   margin: 0;
-}
-.hero h2 {
-  font-size: 1.2em;
-  color: $dark-color;
-  margin: 0.2em 0 1.5em 0;
+
+  h1 {
+    display: inline-block;
+    color: $steel-blue;
+    font-size: 5em;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    color: $dark-color;
+    margin: 0.2em 0 1.5em 0;
+  }
 }
