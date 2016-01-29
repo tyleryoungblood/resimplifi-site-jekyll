@@ -1,9 +1,7 @@
 <footer class="footer">
 
-  <section class="newsletter">
-    <div class="logo">
-      <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-dark.svg"></a>
-    </div>
+  <section class="signup">
+    <a class="logo" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-dark.svg"></a>
     <form action="">
       <input type="text">
       <input type="submit">
@@ -11,17 +9,15 @@
   </section>
 
   <section class="links">
-
     <ul>
       <li><a href="{{ site.baseurl }}/pricing">Pricing</a></li>
       <li><a href="{{ site.baseurl }}/customers">Customers</a></li>
       <li><a href="{{ site.baseurl }}/About Us">About Us</a></li>
       <!-- <li><a href="{{ site.baseurl }}/login">Log In</a></li> -->
     </ul>
-
   </section>
 
-  <section class="social">
+  <section>
     {% if site.footer-links.dribbble %}<a href="https://dribbble.com/{{ site.footer-links.dribbble }}"><i class="svg-icon dribbble"></i></a>{% endif %}
     {% if site.footer-links.email %}<a href="mailto:{{ site.footer-links.email }}"><i class="svg-icon email"></i></a>{% endif %}
     {% if site.footer-links.facebook %}<a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="svg-icon facebook"></i></a>{% endif %}

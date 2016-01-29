@@ -1,74 +1,58 @@
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #e6e7e8;
-  display: block;
-}
-footer .newsletter {
-  padding: 2em 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  margin: 0 auto;
-}
-footer .newsletter .logo {
-  display: inline-block;
-  width: 50%;
-  padding: 0 1em;
-}
-footer .newsletter form {
-  display: inline-block;
-  width: 50%;
-  padding: 0 1em;
-  margin: auto;
-}
+  padding-top: 2em;
 
-footer .social {
-  text-align: center;
-  margin: 20px;
-}
+  section {
+    margin: 1em 0;
+    align-items: center;
 
-footer .copyright {
-  background-color: $steel-blue;
-  height: 3em;
-  text-align: center;
-  color: $bright-color;
-}
-footer .copyright p {
-  line-height: 3em;
-}
-footer .links {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-}
-footer .links h3 {
-  margin: 0;
-  color: $steel-blue;
-}
-footer .links article {
-  width: 25%;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-footer .links ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-}
-footer .links ul li {
-  display: inline-block;
-}
-footer .links ul li + li {
-  border-left: 1px solid $steel-blue;
-}
-footer .links ul li a {
-  text-decoration: none;
-  padding: 20px;
-  color: $charcoal;
+    &.signup {
+      a {
+        display: inline-block;
+        padding-right: 1em;
+        height: 100%;
+        border-right: 2px solid $charcoal;
+      }
+
+      form {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        padding: 20px;
+        color: $charcoal;
+      }
+    }
+
+    li + li {
+      border-left: 1px solid $steel-blue;
+    }
+  }
+
+  .copyright {
+    display: block;
+    line-height: 3em;
+    width: 100%;
+    align-items: flex-end;
+    margin: 0;
+    background-color: $steel-blue;
+    height: 3em;
+    text-align: center;
+    color: $bright-color;
+  }
+
 }
