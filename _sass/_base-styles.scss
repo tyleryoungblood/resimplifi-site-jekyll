@@ -10,7 +10,6 @@ hr {
   height: 2px;
   color: $charcoal;
   background-color: $charcoal;
-  width: 90%;
   margin: 2em 0;
 }
 
@@ -25,44 +24,34 @@ h1 {
   line-height: 1.2em;
 }
 
-.features {
+section.col-1 { // single column section
+  display: block;
   text-align: center;
 }
-.overview,
-.features {
-  width: 80%;
-  margin: 3em auto;
-}
-.overview,
-.each-feature {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.overview article {
-  width: 50%;
-}
-.overview article img {
-  width: 100%;
-}
-.each-feature {
-  margin: 3em 0;
-}
-.each-feature article {
-  width: 33%;
-  display: inline-block;
-}
-.each-feature article img {
-  width: 90%;
-}
 
-section {
+section {  // 2 column section (default)
   display: flex;
   margin: 2em;
 
-  article.feature {
+  img {
+    width: 100%;
+  }
+
+  article {
     width: 50%;
     margin: 2em;
   }
+}
+
+section.col-3 {
+
+  article {
+    width: 33%;
+    margin: 2em;
+
+    img {
+      margin-bottom: 1em;
+    }
+  }
+
 }
