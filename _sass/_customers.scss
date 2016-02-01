@@ -1,0 +1,21 @@
+article.form {
+  background-color: $steel-blue;
+  padding: 3em;
+
+  h1 {
+    color: $bright-color;
+  }
+
+  hr {
+    background-color: $bright-color;
+  }
+
+  input {
+    width: 100%;
+    margin: 1em 0;
+    height: 3em;
+    padding: 0 1em;
+  }
+
+
+}

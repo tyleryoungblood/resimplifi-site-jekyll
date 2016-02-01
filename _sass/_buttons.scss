@@ -1,49 +1,48 @@
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width:350px;
+  margin: 0 auto 3em auto;
+
+  .button {
+    width: calc(50% - 0.25em);
+  }
+}
+
 a.button {
   display: inline-block;
   text-decoration: none;
   color: $steel-blue;
   border: 2px solid $steel-blue;
   padding: 5px 20px;
-  margin: 1em auto;
   font-size: 1.2em;
   font-weight: bold;
-  -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
-}
-.buttons {
-  max-width: 350px;
-  margin: 2em auto;
 
-  a.big-button + a.button {
-    margin-left: 0;
 
+  &:hover {
+    background-color: $steel-blue;
+    color: $bright-color;
+    transition: color 0.3s, background-color 0.3s;
   }
 
-  a.big-button + a.button + a.button {
-    margin-right: -0.32em;
-  }
-  a.button {
-    width: 48%;
-    text-align: center;
+  &.light-button {
+    color: $bright-color;
+    border: 2px solid $bright-color;
 
-
-    &.big-button {
-      width: 100%;
-      padding: 15px 30px;
-      text-align: center;
-      margin-bottom: 0;
-      font-size: 1.8em;
-      margin-right: -0.32em;
+    &:hover {
+      background-color: $bright-color;
+      color: $steel-blue;
     }
   }
-}
 
-a.button:hover {
-  background-color: $steel-blue;
-  color: $bright-color;
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
-}
-a.button + a.button {
-  margin-left: 1em;
+  &.big-button {
+    width: 350px;
+    margin: 2em auto 0.3em auto;
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.8em;
+
+  }
 }

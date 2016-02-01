@@ -1,54 +1,51 @@
 header {
+  display: flex;
   background-color: $steel-blue;
   color: $bright-color;
   height: 60px;
 }
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+
+  a.logo {
+    display: inline-block;
+    background-image: url(../images/logo-light.svg);
+    height:37px;
+    width: 100px;
+  }
+
+  ul {
+
+    li {
+      display: inline-block;
+      line-height: 100%;
+
+      a {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: $bright-color;
+        padding: 5px 20px;
+        margin: 0 auto;
+        font-size: 1em;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+    }
+
+  }
 }
-nav .logo {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  color: $steel-blue;
-  line-height: 50px;
-  margin: 10px;
-  text-align: center;
-}
-nav ul {
-  display: inline-block;
-  top: 50%;
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  padding: 5px 10px;
-  text-decoration: none;
-  color: $bright-color;
-  padding: 5px 20px;
-  margin: 0 auto;
-  font-size: 1em;
-  font-weight: bold;
-}
-nav ul li a:hover {
-  text-decoration: underline;
-}
+
+
+
 nav ul li a.button {
   color: $bright-color;
   font-size: 1em;

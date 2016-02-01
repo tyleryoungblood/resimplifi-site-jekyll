@@ -28,8 +28,8 @@ hero-tagline: REsimplifi is a new way to work in the Commercial Real Estate Indu
 
 <section class="col-1">
   <h1>Subscriptions starting at just $120/month</h1>
-  <div class="buttons">
-    <a href="" class="button big-button">Sign up today</a>
+  <a href="" class="button big-button">Sign up today</a>
+  <div class="button-group">
     <a href="" class="button">Request Demo</a>
     <a href="" class="button">Contact Us</a>
   </div>
