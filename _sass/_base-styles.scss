@@ -15,6 +15,7 @@ hr {
 
 p {
   font-size: 1.3em;
+  margin: 1.5em 0;
 }
 
 h1 {
@@ -31,6 +32,8 @@ section.col-1 { // single column section
 
 section {  // 2 column section (default)
   display: flex;
+  //flex-wrap: wrap;
+
   margin: 2em;
 
   img {
@@ -46,12 +49,9 @@ section {  // 2 column section (default)
 section.col-3 {
 
   article {
-    width: 33%;
+    // width: calc(33% - 4em);
+    // min-width: 200px;
     margin: 2em;
-
-    img {
-      margin-bottom: 1em;
-    }
   }
 
 }
