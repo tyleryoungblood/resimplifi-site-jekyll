@@ -12,14 +12,17 @@ footer {
     &.signup {
       a {
         display: inline-block;
-        padding-right: 1em;
         height: 100%;
-        border-right: 2px solid $charcoal;
+        margin-bottom: 1em;
       }
 
       form {
         margin-left: 1em;
       }
+    }
+
+    &.social {
+      display: inline-block;
     }
   }
 

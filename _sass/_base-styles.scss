@@ -1,9 +1,13 @@
 body {
   font-family: 'Muli', sans-serif;
   font-size: 12px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   color: $charcoal;
+
+  @media (min-width: 600px) {
+    width: 95%;
+  }
 }
 hr {
   border: none;
@@ -32,26 +36,35 @@ section.col-1 { // single column section
 
 section {  // 2 column section (default)
   display: flex;
-  //flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1em;
 
-  margin: 2em;
+  @media(min-width: 600px) {
+    flex-direction: row;
+  }
+
+
 
   img {
     width: 100%;
   }
 
   article {
-    width: 50%;
-    margin: 2em;
+    margin: 1em 0;
+
+    @media(min-width: 600px) {
+      width: 50%;
+      margin: 1em;
+    }
   }
 }
 
 section.col-3 {
 
   article {
-    // width: calc(33% - 4em);
-    // min-width: 200px;
-    margin: 2em;
+    @media(min-width: 600px) {
+      margin: 1em;
+    }
   }
 
 }
