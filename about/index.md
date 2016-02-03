@@ -57,7 +57,7 @@ unnecessary administrative downtime.</li>
   <p>We hope REsimplifi complements your efforts in the field.</p>
 
   <section class="signature">
-    <img class="headshot" src="../images/henry-photo.svg" alt="Henry Moore">
+    <img class="headshot" src="../images/henry_moore_2.jpg" alt="Henry Moore">
     <div class="flex-col">
       <p>Regards,</p>
       <img class="signature" src="../images/signature.svg" alt="signature"></img>
