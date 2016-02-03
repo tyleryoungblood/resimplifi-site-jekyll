@@ -15,13 +15,14 @@ footer {
 
     &.signup {
       a {
-        display: inline-block;
+        display: block;
         height: 100%;
         margin-bottom: 1em;
       }
 
       form {
         margin-left: 1em;
+        display: block;
       }
     }
 
