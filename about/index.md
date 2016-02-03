@@ -16,7 +16,7 @@ hero-tagline: We know this industry inside and out, and we've got your back.
   </article>
 </section>
 
-<section class="col-3">
+<section class="team col-3">
 
   <article>
     <img src="../images/henry_moore.jpg" alt="Henry Moore">

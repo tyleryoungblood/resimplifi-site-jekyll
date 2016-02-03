@@ -1,8 +1,18 @@
+.team img {
+  height: 300px;
+}
+
 .open-letter {
   background-color: $lightGray;
   display: block;
-  margin: 4em;
-  padding: 4em;
+  padding: 2em;
+  margin-bottom: 2em;
+
+  @media(min-width: 600px) {
+    margin: 2em;
+    padding: 4em;
+
+  }
 
   ul {
     list-style-type: disc;

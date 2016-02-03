@@ -14,11 +14,15 @@
     width: 100%;
     font-size: 9vw;
     margin: 0;
+
+    @media(min-width: 600px) {
+      font-size: 5em;
+    }
   }
 
   h2 {
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: $dark-color;
     margin: 1em 0;
   }
