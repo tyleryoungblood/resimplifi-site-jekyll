@@ -12,8 +12,6 @@ header {
 nav {
   display: flex;
   flex-direction: column;
-
-
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -60,8 +58,8 @@ nav {
         text-decoration: none;
         color: $bright-color;
         margin: 0 auto;
-        font-size: 1em;
-        font-weight: bold;
+        font-weight: normal;
+        font-size: 1.4em;
         display: block;
         width: 100%;
 
@@ -72,6 +70,7 @@ nav {
 
         @media(min-width: 600px) {
           padding: 0 15px;
+          //font-size: 1em;
           &:hover {
             text-decoration: underline;
             background-color: $steel-blue;
@@ -88,29 +87,37 @@ nav {
 
 nav ul li a.button {
   color: $bright-color;
-  font-size: 1em;
+  font-size: 1.4em;
+  font-weight: normal;
   border:none;
-  padding: 10px 20px;
+  padding: 10px 0;
+  margin: 0;
 }
 
 nav ul li a.button:hover {
   background-color: $bright-color;
   color: $steel-blue;
+  padding: 10px 20px;
 }
 
 @media(min-width: 600px){
   nav ul li a.button {
     color: $bright-color;
-    font-size: 1em;
+    //font-size: 1em;
     border: 2px solid $bright-color;
-    -webkit-transition: color 0.3s, background-color 0.3s;
-    transition: color 0.3s, background-color 0.3s;
+    padding: 10px 20px;
   }
   nav ul li a.button:hover {
     background-color: $bright-color;
     color: $steel-blue;
-    -webkit-transition: color 0.3s, background-color 0.3s;
-    transition: color 0.3s, background-color 0.3s;
+    padding: 10px 20px;
     text-decoration: none;
   }
+}
+
+nav ul li a,
+nav ul li a:hover,
+nav ul li a.button,
+nav ul li a.button:hover {
+  transition: color 0.3s, background-color 0.3s;
 }

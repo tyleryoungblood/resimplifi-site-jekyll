@@ -28,6 +28,16 @@ footer {
 
     &.social {
       display: inline-block;
+
+      i {
+        border: 2px solid #e6e7e8;
+        //transition: border .2s;
+      }
+
+      i:hover {
+        border: none;
+        //transition: border .2s;
+      }
     }
   }
 
