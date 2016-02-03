@@ -47,6 +47,8 @@ section {  // 2 column section (default)
 
   img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
   }
 
   article {

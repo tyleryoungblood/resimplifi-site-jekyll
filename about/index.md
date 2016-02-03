@@ -8,12 +8,34 @@ hero-tagline: We know this industry inside and out, and we've got your back.
 
 <section>
   <article class="feature">
-    <img src="../images/app-screenshot-placeholder.svg" alt="">
+    <img src="../images/team.jpg" alt="">
   </article>
   <article class="feature">
     <h1>About us</h1><hr>
-    <p>Together our team has over 20 years of experience in Commercial Real Estate brokerage, law, and management. Founder Henry Moore was most recently a Vice President with Colliers International South Carolina. Before Colliers, Henry worked in both sales and management in the technology and medical device industries. Founder David Collier is a former real estate attorney and served in multiple executive leadership positions in the Commercial Real Estate management industry. Tyler Youngblood comes to REsimplifi after working in development for Colonial Life. Additionally, Tyler has taught computer sciences at Highline College in Washington State.</p>
+    <p>Together our team has over 20 years of experience in Commercial Real Estate brokerage, law, and management.</p>
   </article>
+</section>
+
+<section class="col-3">
+
+  <article>
+    <img src="../images/henry_moore.jpg" alt="Henry Moore">
+    <p>Founder Henry Moore was most recently a Vice President with Colliers International South Carolina. Before Colliers, Henry worked in both sales and management in the technology and medical device industries.</p>
+    <a href="" class="button">social</a>
+  </article>
+
+  <article>
+    <img src="../images/david_collier.png" alt="David Collier">
+    <p>Founder David Collier is a former real estate attorney and served in multiple executive leadership positions in the Commercial Real Estate management industry.</p>
+    <a href="" class="button">social</a>
+  </article>
+
+  <article>
+    <img src="../images/tyler_youngblood.jpg" alt="Tyler Youngblood">
+    <p>Lead Developer Tyler Youngblood comes to REsimplifi after working in development for Colonial Life. Previously Tyler served as Computer Science faculty at Highline College in Washington State.</p>
+    <a href="" class="button">social</a>
+  </article>
+
 </section>
 
 <section class="open-letter">
@@ -38,7 +60,7 @@ unnecessary administrative downtime.</li>
     <img class="headshot" src="../images/henry-photo.svg" alt="Henry Moore">
     <div class="flex-col">
       <p>Regards,</p>
-      <img class="signature" src="../images/signature.svg" alt="signature">
+      <img class="signature" src="../images/signature.svg" alt="signature"></img>
       <p>H. Moore</p>
     </div>
 
