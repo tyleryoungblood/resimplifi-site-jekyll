@@ -30,6 +30,12 @@ h1 {
   line-height: 1.2em;
 }
 
+h2 {
+  font-size: 2em;
+  color: $pumpkin;
+  margin: 0.5em 0;
+}
+
 section.col-1 { // single column section
   display: block;
   text-align: center;
@@ -49,6 +55,12 @@ section {  // 2 column section (default)
   img {
     width: 100%;
     object-fit: cover;
+    border: 2px solid $lightGray;
+    padding: 3px;
+
+    &.no-border {
+      border: none;
+    }
   }
 
   article {
@@ -63,14 +75,49 @@ section {  // 2 column section (default)
 
 section.col-3 {
 
+  flex-wrap: wrap;
+  align-items: stretch;
+
   article {
-    @media(min-width: 600px) {
-      margin: 1em;
+    margin: 1em auto;
+
+    p {
+      margin-bottom: 0.5em;
     }
+
+    @media(min-width: 600px) {
+      width: calc(50% - 2em);
+    }
+
+    @media(min-width: 850px) {
+      width: calc(33% - 2em);
+    }
+
   }
 
 }
 
 .svg-icon, svg {
   fill: $steel-blue;
+}
+
+.features img, img.feature {
+  border: 2px solid $lightGray;
+  padding: 3px;
+
+
+  @media(min-width: 600px) {
+    object-fit: cover;
+    height: 20vw;
+  }
+}
+
+@media(max-width: 599px){
+  .flex-order-1 {
+    order: 1;
+  }
+
+  .flex-order-2 {
+    order: 2;
+  }
 }
