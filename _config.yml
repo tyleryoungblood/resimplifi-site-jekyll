@@ -14,11 +14,11 @@ description: Simplify your process.
 # Define site navigation and use a {% for %} loop to display active tab in header
 navigation:
   - title: Pricing
-    url: /pricing/
+    url: pricing
   - title: Customers
-    url: /customers/
+    url: customers
   - title: About Us
-    url: /about/
+    url: about
 #
 # Flags below are optional
 #
