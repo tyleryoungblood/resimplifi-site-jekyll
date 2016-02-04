@@ -13,6 +13,8 @@ description: Simplify your process.
 
 # Define site navigation and use a {% for %} loop to display active tab in header
 navigation:
+  - title: Home
+    url: index.html
   - title: Pricing
     url: pricing
   - title: Customers
