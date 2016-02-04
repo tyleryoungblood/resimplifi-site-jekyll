@@ -3,7 +3,7 @@ layout: page
 title:
 permalink: /about/
 hero-title: Experience You Can Trust.
-hero-tagline: We know this industry inside and out, and we've got your back.
+hero-tagline: We know our industry inside and out, and we've got your back.
 ---
 
 <section>
