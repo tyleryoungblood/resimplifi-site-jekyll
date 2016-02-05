@@ -1,3 +1,15 @@
+section.customers article {
+  flex-grow: 6;
+
+  &.form {
+    flex-grow: 2;
+    @media(min-width: 600px) {
+      max-width: 400px;
+    }
+
+  }
+}
+
 article.form {
   background-color: $steel-blue;
   padding: 3em;
@@ -9,13 +21,5 @@ article.form {
   hr {
     background-color: $bright-color;
   }
-
-  input {
-    width: 100%;
-    margin: 1em 0;
-    height: 3em;
-    padding: 0 1em;
-  }
-
 
 }

@@ -14,6 +14,8 @@ footer {
     align-items: center;
 
     &.signup {
+      display: block;
+
       a {
         display: block;
         height: 100%;
@@ -23,6 +25,12 @@ footer {
       form {
         margin-left: 1em;
         display: block;
+
+        input {
+          display: inline-block;
+          width:49%;
+          margin: 0;
+        }
       }
     }
 
@@ -51,9 +59,13 @@ footer {
 
       a {
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1em;
         padding: 20px;
         color: $steel-blue;
+
+        @media(min-width: 600px) {
+          font-size: 1.5em;
+        }
 
         &:hover {
           text-decoration: underline;

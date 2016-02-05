@@ -66,6 +66,14 @@ section {  // 2 column section (default)
   article {
     margin: 1em 0;
 
+    &.centered {
+      margin: auto 1em;
+
+      @media(min-width: 600px) {
+        margin: auto 3em;
+      }
+    }
+
     @media(min-width: 600px) {
       width: 50%;
       margin: 1em;
