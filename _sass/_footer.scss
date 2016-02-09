@@ -14,17 +14,23 @@ footer {
     align-items: center;
 
     &.signup {
-      display: block;
+
 
       a {
         display: block;
         height: 100%;
         margin-bottom: 1em;
+        @media(min-width: 600px) {
+          display: inline;
+        }
       }
 
       form {
         margin-left: 1em;
         display: block;
+        @media(min-width: 600px) {
+          display: inline;
+        }
 
         input {
           display: inline-block;
