@@ -13,7 +13,7 @@ hero-tagline:
     </article>
     <article>
       <div class="lighten">
-        <h2>Resimplifi simplifies the Commercial Real Estate process:</h2>
+        <h2>REsimplifi simplifies the Commercial Real Estate process:</h2>
         <ul>
           <li>Reducing agent paperwork
             <ul>
