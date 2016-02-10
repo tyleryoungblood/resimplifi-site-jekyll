@@ -1,61 +1,57 @@
-.team {
+.about {
+  background: url("images/saint-john-brick-facades-0.2.png");
+  background-size: cover;
+  background-position: center;
 
   img {
-    height: 300px;
+    border: none;
   }
 
-}
+  section {
+    width: 100%;
+    max-width: 1024px;
+    flex-direction: row;
+  }
 
-.open-letter {
-  background-color: $lightGray;
-  display: block;
-  padding: 2em;
-  margin-bottom: 2em;
+  article {
+    margin: auto 1em;
 
-  @media(min-width: 600px) {
-    margin: 2em;
-    padding: 4em;
+    .lighten {
+
+      padding: 2em;
+      background-color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 2em;
+    }
 
   }
 
   ul {
+    text-align: left;
     list-style-type: disc;
-    margin: 1.5em;
-    font-size: 1.3em;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
 
     li {
-      line-height: 1.3em;
-      margin: 1em 0;
+      font-weight: bold;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin: .5em 0;
+
+      ul {
+        list-style-type: none;
+        li {
+          font-weight: normal;
+          font-size: .9em;
+          padding-left: 1.5em;
+          margin-top: 0;
+
+          &:before {
+            content: "- "
+          }
+        }
+      }
+
     }
   }
-
-}
-
-.signature {
-  display: flex;
-  margin: 5em 0 0 0;
-
-  p {
-    margin: 0;
-  }
-
-  .headshot {
-    width: 150px;
-    height: 150px;
-    margin-right: 2em;
-    border-radius: 75px;
-  }
-
-  img.signature {
-    margin: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
 }

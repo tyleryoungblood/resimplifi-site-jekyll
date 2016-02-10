@@ -1,11 +1,14 @@
 .hero {
+  background: url("images/hero.png");
+}
+
+.hero, .about, .contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("images/hero.png");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   text-align: center;
   margin: 0;
   padding: 1em;
