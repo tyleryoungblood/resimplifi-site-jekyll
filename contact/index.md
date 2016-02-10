@@ -13,7 +13,7 @@ hero-tagline:
     <article class="form flex-order-2">
       <form action="https://getsimpleform.com/messages?form_api_token=7f4510769ba69eb6a2c7eb5ae3f27383" method="post">
         <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
+        <input type='hidden' name='redirect_to' value='http://www.resimplifi.com/thanks' />
         <!-- all your input fields here.... -->
         <input type="text" name="contact-name" id="" placeholder="Your Name">
         <input type="text" name="contact-title" id="" placeholder="Title">
@@ -24,7 +24,7 @@ hero-tagline:
       </form>
     </article>
 
-    <article class="flex-order-1">
+    <article class="flex-order-1 lighten">
       <h1>Get in touch!</h1>
       <h2>Please contact us for pricing information or for a complementary product demonstration.</h2>
     </article>

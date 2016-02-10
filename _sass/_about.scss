@@ -1,7 +1,13 @@
 .about {
-  background: url("images/saint-john-brick-facades-0.2.png");
+  background: url("images/storefront_edit.jpg");
   background-size: cover;
   background-position: center;
+
+  h2 {
+    color: $steel-blue;
+    font-size: 2em;
+    font-weight: bold;
+  }
 
   img {
     border: none;
@@ -10,17 +16,21 @@
   section {
     width: 100%;
     max-width: 1024px;
-    flex-direction: row;
+    flex-direction: column;
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+    }
+
   }
 
   article {
-    margin: auto 1em;
 
-    .lighten {
+    margin: 2em auto;
+    width: 100%;
 
-      padding: 2em;
-      background-color: rgba(255, 255, 255, 0.6);
-      margin-bottom: 2em;
+    @media(min-width: 768px) {
+      margin: auto 2em;
     }
 
   }
