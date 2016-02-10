@@ -5,7 +5,7 @@ permalink: /thanks/
 hero-title:
 hero-tagline:
 ---
-<section class="contact ">
+<section class="thanks">
 
     <article class="lighten">
       <h1>Thanks!</h1>
