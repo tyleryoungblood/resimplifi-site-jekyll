@@ -1,5 +1,14 @@
 .hero {
   background: url("images/hero.png");
+
+}
+
+.about, .contact {
+  min-height: calc(100vh - 60px - 290px);
+}
+
+.hero {
+  min-height: calc(100vh - 60px);
 }
 
 .hero, .about, .contact {
@@ -8,7 +17,7 @@
   justify-content: center;
   background-size: cover;
   background-position: center;
-  min-height: calc(100vh - 60px);
+
   text-align: center;
   margin: 0;
   padding: 1em;
@@ -19,13 +28,21 @@
     margin: 0;
 
     @media(min-width: 600px) {
-      font-size: 5em;
+      font-size: 6em;
     }
   }
 
   h2 {
     width: 100%;
     margin: 1em 0;
+    color: $charcoal;
+    font-size: 1.35em;
+    line-height: 1.5em;
+  }
+
+  .button {
+    padding: 15px 60px;
+    background-color: transparentize(#fff, 1);
   }
 
 }

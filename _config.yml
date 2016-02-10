@@ -21,7 +21,7 @@ navigation:
   #   url: customers
   - title: Contact
     url: contact
-  - title: About Us
+  - title: About
     url: about
 #
 # Flags below are optional
