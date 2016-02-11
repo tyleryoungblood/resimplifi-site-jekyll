@@ -19,10 +19,10 @@ navigation:
   #   url: pricing
   # - title: Customers
   #   url: customers
+  - title: What We Do
+    url: about
   - title: Contact
     url: contact
-  - title: About
-    url: about
 #
 # Flags below are optional
 #
