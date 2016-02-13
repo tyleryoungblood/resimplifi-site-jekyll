@@ -23,6 +23,8 @@ navigation:
     url: about
   - title: Contact
     url: contact
+  - title: Press
+    url: press
 #
 # Flags below are optional
 #
