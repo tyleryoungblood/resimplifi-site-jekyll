@@ -10,16 +10,17 @@ footer {
   }
 
   section {
+    display: block;
     margin: 1em 0;
     align-items: center;
 
     &.signup {
-
+      margin: 0;
 
       a {
         display: block;
         height: 100%;
-        margin-bottom: 1em;
+        //margin-bottom: 1em;
         @media(min-width: 600px) {
           display: inline;
         }
