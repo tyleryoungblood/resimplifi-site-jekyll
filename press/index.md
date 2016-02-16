@@ -15,12 +15,12 @@ hero-tagline:
   </div>
 
   <section class="logos">
-    <a href="">
-      <img src="../images/press/Yahoo-Finance-logo.png" alt="">
+    <a href="http://finance.yahoo.com/news/scra-technology-ventures-accepts-companies-215200638.html">
+      <img src="../images/press/Yahoo-Finance-logo.png" alt="SCRA Technology Ventures Accepts REsimplifi into SC Launch program">
     </a>
 
-    <a href="">
-      <img src="../images/press/scra-logo.png" alt="">
+    <a href="http://www.scra.org/press/newcompanies-021116.html">
+      <img src="../images/press/scra-logo.png" alt="REsimplifi joins SC Launch program">
     </a>
   </section>
 
