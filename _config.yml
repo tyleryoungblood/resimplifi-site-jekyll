@@ -19,8 +19,8 @@ navigation:
   #   url: pricing
   # - title: Customers
   #   url: customers
-  - title: What We Do
-    url: about
+  # - title: What We Do
+  #   url: about
   - title: Contact
     url: contact
   - title: Press
@@ -35,7 +35,7 @@ footer-links:
   email: david@resimplifi.com
   facebook:
   flickr:
-  github: 
+  github:
   instagram:
   linkedin: company/resimplifi-inc-
   pinterest:
