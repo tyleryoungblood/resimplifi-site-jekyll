@@ -4,10 +4,10 @@ var mergefields =
   //############################################################################
 
     {"label":"subheader",                         "value":"Agency Representation"},
-      {"label":"Agreement Commencement Date",     "value":""},
-      {"label":"Agreement Expiration Date",       "value":""},
-      {"label":"Agents Commission (estimate)%",   "value":""},
-      {"label":"Representation Term (months)",    "value":""},
+      {"label":"Agreement Commencement Date",     "value":"Listing Agreement Commencement Date"},
+      {"label":"Agreement Expiration Date",       "value":"Listing Agreement Expiration Date"},
+      {"label":"Agents Commission (estimate)%",   "value":"Company Commission Percent"},
+      {"label":"Representation Term (months)",    "value":"Listing Agreement Term Months"},
 
     {"label":"subheader",         "value":"Search Requirements"},
       {"label":"Square Footage",  "value":"Search Square Footage"},
@@ -32,11 +32,11 @@ var mergefields =
   //############################################################################
 
     {"label":"subheader",                       "value":"Agreement Details"},
-      {"label":"Agreement Commencement Date",   "value":""},
-      {"label":"Agreement Expiration Date",     "value":""},
-      {"label":"Listing Term",                  "value":""},
-      {"label":"Gross Listing Commission %",    "value":""},
-      {"label":"Sales Price",                   "value":""},
+      {"label":"Agreement Commencement Date",   "value":"Listing Agreement Commencement Date"},
+      {"label":"Agreement Expiration Date",     "value":"Listing Agreement Expiration Date"},
+      {"label":"Listing Term",                  "value":"Listing Agreement Term Months"},
+      {"label":"Gross Listing Commission %",    "value":"Gross Commission Percentage"},
+      {"label":"Sales Price",                   "value":"Listing Sales Price"},
 
   //############################################################################
   {"label":"header",                            "value":"Landlord"},
@@ -48,18 +48,18 @@ var mergefields =
       {"label":"Listing Term",                  "value":"Listing Agreement Term Months"},
       {"label":"Gross Listing Commission %",    "value":"Gross Commission Percentage"},
       {"label":"Liating Rental Rate $",         "value":"Listing Monthly Square Foot Rate"},
-      {"label":"Projected Rental Increase",     "value":""},
+      {"label":"Projected Rental Increase",     "value":"Search Yearly Square Foot Rate Increase"},
       {"label":"Projected Term (Years)",        "value":"Term Years"},
 
   //############################################################################
-  {"label":"header",                                      "value":"Tennant"},
+  {"label":"header",                                      "value":"Tenant"},
   //############################################################################
 
     {"label":"subheader",                                 "value":"Agency Representation"},
-      {"label":"Agreement Commencement Date",             "value":""},
-      {"label":"Agreement Expiration Date",               "value":""},
+      {"label":"Agreement Commencement Date",             "value":"Listing Agreement Commencement Date"},
+      {"label":"Agreement Expiration Date",               "value":"Listing Agreement Expiration Date"},
       {"label":"Tenant Agents Commission (estimate)%",    "value":"Tenant Agent Commission"},
-      {"label":"Representation Term (months)",            "value":""},
+      {"label":"Representation Term (months)",            "value":"Listing Agreement Term Months"},
 
   //############################################################################
   {"label":"header",                        "value":"Property"},
@@ -71,7 +71,7 @@ var mergefields =
       {"label":"Street Address",            "value":"Property: Address"},
       {"label":"City",                      "value":"Property: City"},
       {"label":"State",                     "value":"Property: State"},
-      {"label":"Postal Code",               "value":"Property: Billing Zip/ Postal Code"},
+      {"label":"Postal Code",               "value":"Property: Postal Code"},
       {"label":"County",                    "value":"Property: County"},
       {"label":"Country",                   "value":"Property: Country"},
       {"label":"Zoning",                    "value":"Property: Zoning"},
@@ -84,12 +84,12 @@ var mergefields =
       {"label":"Number of Floors",          "value":"Property: Floor"},
       {"label":"Year Built",                "value":"Property: Year Built"},
       {"label":"Common Area Factor",        "value":"Property: Common Area Factor"},
-      {"label":"Acreage",     "value":""},
+      {"label":"Acreage",                   "value":"Property: Acreage"},
 
     {"label":"subheader",         "value":"Images"},
-      {"label":"Primary Image",   "value":""},
-      {"label":"Secondary Image", "value":""},
-      {"label":"Tertiary Image",  "value":""},
+      {"label":"Primary Image",   "value":"Property: Image Primary"},
+      {"label":"Secondary Image", "value":"Property: Image Secondary"},
+      {"label":"Tertiary Image",  "value":"Property: Image Tertiary"},
 
   //############################################################################
   {"label":"header",        "value":"Transaction"},
@@ -115,7 +115,7 @@ var mergefields =
       {"label":"Co-Broker Commission %",                  "value":"Co-Broker Commission Split"},
       {"label":"Gross Commission $",                      "value":"Gross Commission"},
       {"label":"Company Commission $",                    "value":"Company Commission Amount"},
-      {"label":"Co-Broker Commission $",                  "value":""},
+      {"label":"Co-Broker Commission $",                  "value":"Outside Commission Amount"},
       {"label":"Commission to be paid by",                "value":"Commission To Be Paid By"},
       {"label":"Commission Notes",                        "value":"Commission Notes"},
 
@@ -184,17 +184,17 @@ var mergefields =
   {"label":"header",        "value":"Date"},
   //############################################################################
 
-    {"label":"subheader",                 "value":"Date Formats"},
-      {"label":"Listing Commencement",    "value":"Listing Commencement|date_format:m/d/Y"},
-      {"label":"Listing Expiration",      "value":"Listing Expiration|date_format:m/d/Y"},
-      {"label":"Create Date",             "value":"Create Date|date_format:m/d/Y"},
-      {"label":"Lease Commencement",      "value":"Lease Commencement|date_format:m/d/Y"},
-      {"label":"Lease Expiration",        "value":"Lease Expiration|date_format:m/d/Y"},
-      {"label":"Option to Renew",         "value":"Option to Renew|date_format:m/d/Y"},
-      {"label":"Option to Terminate",     "value":"Option to Terminate|date_format:m/d/Y"},
-      {"label":"Option to Expand",        "value":"Option to Expand|date_format:m/d/Y"},
-      {"label":"Right of First Refusal",  "value":"Right of First Refusal|date_format:m/d/Y"},
-      {"label":"Due Diligence",           "value":"Due Diligence|date_format:m/d/Y"},
+    {"label":"subheader",                 "value":'Date Formats ( |date_format:"m/d/Y" )'},
+      {"label":"Listing Commencement",    "value":"Listing Commencement Date"},
+      {"label":"Listing Expiration",      "value":"Listing Expiration Date"},
+      {"label":"Create Date",             "value":"Create Date"},
+      {"label":"Lease Commencement",      "value":"Lease Commencement"},
+      {"label":"Lease Expiration",        "value":"Lease Expiration"},
+      {"label":"Option to Renew",         "value":"Option to Renew"},
+      {"label":"Option to Terminate",     "value":"Option to Terminate"},
+      {"label":"Option to Expand",        "value":"Option to Expand"},
+      {"label":"Right of First Refusal",  "value":"Right of First Refusal"},
+      {"label":"Due Diligence",           "value":"Due Diligence"},
 
 
 ];

@@ -81,10 +81,12 @@
         tabContent += '<section class="mergefieldGroup clearfix col"><h2>' + mergefields[i].value + '</h2>';
       } else {
         // same as above, but these won't have parens to remove
-        id = mergefields[i].value.split(' ').join('').split(':').join('');
+        id = mergefields[i].value.split(' ').join('').split(':').join('').split('(').join('').split(')').join('').split('/').join('');
 
         // add required "{$ }" to beginning and end of merge field, and replace spaces with _
-        webmergeField = "{$" + mergefields[i].value.split(' ').join('_') + "}";
+        webmergeField = "{$" + mergefields[i].value.split(' ').join('_').split('(').join('').split(')').join('').split(':').join('8').split('/').join('') + "}";
+        webmergeField = webmergeField.split('|date_format8mdY').join('|date_format:\"m/d/Y\"'); //fix date filter so it doesn't have the colon replaced with an 8 or the quotes removed.
+
 
         //create visible label, textbox, and copy button for each merge field
         tabContent += '<label for="#' + id + '">' + mergefields[i].label + '</label>';
