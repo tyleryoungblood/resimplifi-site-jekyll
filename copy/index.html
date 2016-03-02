@@ -79,6 +79,10 @@
       } else if(mergefields[i].label === "subheader") {
         if(i > 2) { tabContent += '</section>'};
         tabContent += '<section class="mergefieldGroup clearfix col"><h2>' + mergefields[i].value + '</h2>';
+
+      } else if(mergefields[i].label === "text") {
+        tabContent += '<p>' + mergefields[i].value + '</p>';
+
       } else {
         // same as above, but these won't have parens to remove
         id = mergefields[i].value.split(' ').join('').split(':').join('').split('(').join('').split(')').join('').split('/').join('');
@@ -95,11 +99,6 @@
       }
 
     }
-
-    navTabs += '<li><a data-toggle="tab" href="#rentTable">Rent Table</a></li>'
-    tabContent += '</div><div id="rentTable" class="tab-pane fade in flexbox">';
-    tabContent += '<h1>Rent Table</h1>';
-    tabContent += '<p>Please copy/paste from the <a href="RentTableMerge.docx">Rent Table Document</a>.</p></div>';
 
     //document.getElementById("mergeFieldList").innerHTML = text;
     document.getElementById("nav-tabs").innerHTML = navTabs;

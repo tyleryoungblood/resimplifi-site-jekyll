@@ -26,6 +26,7 @@ h1 {
   display: inline-block;
   padding: 0 1em 1em 1em;
   min-height: 30em;
+  vertical-align: top;
 }
 
 h2 {
@@ -38,8 +39,14 @@ h2 {
   background-color: #ccc;
 }
 
-h1, h2 {
+h1, h2, p {
   clear: both;
+}
+
+p {
+  padding-top: 2em;
+  max-width: 400px;
+  display: block;
 }
 
 label {
