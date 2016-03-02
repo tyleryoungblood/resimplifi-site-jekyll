@@ -58,8 +58,18 @@ var mergefields =
     {"label":"subheader",                                 "value":"Agency Representation"},
       {"label":"Agreement Commencement Date",             "value":"Listing Agreement Commencement Date"},
       {"label":"Agreement Expiration Date",               "value":"Listing Agreement Expiration Date"},
+      {"label":"Listing Agreement Term (Months)",         "value":"Listing Agreement Term Months"},
       {"label":"Tenant Agents Commission (estimate)%",    "value":"Tenant Agent Commission"},
       {"label":"Representation Term (months)",            "value":"Listing Agreement Term Months"},
+      {"label":"Improvement Allowance",                   "value":"Improvement Allowance"},
+
+    {"label":"subheader",                     "value":"Transaction Info"},
+      {"label":"Lease Commencement Date",     "value":"Lease Commencement Date"},
+      {"label":"Lease Expiration Date",       "value":"Lease Expiration Date"},
+      {"label":"Lease Term (Months)",         "value":"Lease Term Months"},
+      {"label":"Security Deposit (Yes/No)",   "value":"Security Deposit"},
+      {"label":"Security Deposit Amount",     "value":"Security Deposit Amount"},
+      {"label":"Security Deposit Held By",    "value":"Security Deposit Held By"},
 
   //############################################################################
   {"label":"header",                        "value":"Property"},
@@ -139,7 +149,7 @@ var mergefields =
       {"label":"Department",      "value":"Primary Buyer Contact: Department"},
       {"label":"Email",           "value":"Primary Buyer Contact: Email"},
       {"label":"Fax",             "value":"Primary Buyer Contact: Fax"},
-      {"label":"Phone",           "value":"Primary Buyer Contact: Business Name"},
+      {"label":"Phone",           "value":"Primary Buyer Contact: Business Phone"},
       {"label":"Mobile Phone",    "value":"Primary Buyer Contact: Mobile Phone"},
 
     {"label":"subheader",         "value":"Seller Acount"},
@@ -158,7 +168,7 @@ var mergefields =
       {"label":"Department",      "value":"Primary Seller Contact: Department"},
       {"label":"Email",           "value":"Primary Seller Contact: Email"},
       {"label":"Fax",             "value":"Primary Seller Contact: Fax"},
-      {"label":"Phone",           "value":"Primary Seller Contact: Business Name"},
+      {"label":"Phone",           "value":"Primary Seller Contact: Business Phone"},
       {"label":"Mobile Phone",    "value":"Primary Seller Contact: Mobile Phone"},
 
     {"label":"subheader",         "value":"Landlord Acount"},
@@ -177,7 +187,7 @@ var mergefields =
       {"label":"Department",      "value":"Primary Landlord Contact: Department"},
       {"label":"Email",           "value":"Primary Landlord Contact: Email"},
       {"label":"Fax",             "value":"Primary Landlord Contact: Fax"},
-      {"label":"Phone",           "value":"Primary Landlord Contact: Business Name"},
+      {"label":"Phone",           "value":"Primary Landlord Contact: Business Phone"},
       {"label":"Mobile Phone",    "value":"Primary Landlord Contact: Mobile Phone"},
 
     {"label":"subheader",         "value":"Tenant Acount"},
@@ -196,7 +206,7 @@ var mergefields =
       {"label":"Department",      "value":"Primary Tenant Contact: Department"},
       {"label":"Email",           "value":"Primary Tenant Contact: Email"},
       {"label":"Fax",             "value":"Primary Tenant Contact: Fax"},
-      {"label":"Phone",           "value":"Primary Tenant Contact: Business Name"},
+      {"label":"Phone",           "value":"Primary Tenant Contact: Business Phone"},
       {"label":"Mobile Phone",    "value":"Primary Tenant Contact: Mobile Phone"},
 
     {"label":"subheader",     "value":"Co-Broker Acount"},
@@ -215,7 +225,7 @@ var mergefields =
       {"label":"Department",      "value":"Primary Co-Broker Contact: Department"},
       {"label":"Email",           "value":"Primary Co-Broker Contact: Email"},
       {"label":"Fax",             "value":"Primary Co-Broker Contact: Fax"},
-      {"label":"Phone",           "value":"Primary Co-Broker Contact: Business Name"},
+      {"label":"Phone",           "value":"Primary Co-Broker Contact: Business Phone"},
       {"label":"Mobile Phone",    "value":"Primary Co-Broker Contact: Mobile Phone"},
 
   //############################################################################
