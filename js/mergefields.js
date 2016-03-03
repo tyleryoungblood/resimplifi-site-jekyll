@@ -103,6 +103,7 @@ var mergefields =
 
     {"label":"text",            "value":"Please follow directions <a href='https://www.webmerge.me/blog/embed-images-in-word-docx'>here</a> and remember to append <code>|image:1:png</code> to the image placeholder. Your finished merge variable should look something like <code>{$Property_Image_Primary|image:1:png}</code>."},
     {"label":"text",            "value":"View the linked image below in a new tab and modify the height/width parameters so that the image fits in your document. Once properly sized, right-click and copy/paste into your document.<br><br><a href='https://www.webmerge.me/images/image.php?width=300&amp;height=100&amp;type=png'>https://www.webmerge.me/images/image.php?width=300&amp;height=100&amp;type=png</a>"},
+    {"label":"text",            "value":"NEW METHOD: <code>{$Property_Image_Primary|insert_image:300:100}</code> where width = 300, height = 100."},
 
   //############################################################################
   {"label":"header",        "value":"Transaction"},
