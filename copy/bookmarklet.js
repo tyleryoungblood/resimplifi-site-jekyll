@@ -1,31 +1,39 @@
-// I created this bookmarklet and used http://chriszarate.github.io/bookmarkleter/ to turn my js into a minified bookmarklet
-// bookmarklet grabs all of the webmerge field names from a page and tries to match them up with SF fields. 
+// This is the working bookmarklet code in raw, commented JS
 
-//minified
-javascript:void function(e){var n=function(e){for(var n=1,o=document.querySelectorAll(".wm-field-name"),l=document.querySelectorAll(".slds-input"),t=0;t<o.length;t++)convertedFieldName=o[t].innerHTML.split("_").join(" ").split("8").join(":"),console.log(convertedFieldName),l[n].value=convertedFieldName,l[n].focus(),l[n].blur(),n+=2},o=e%26%26e.fn%26%26parseFloat(e.fn.jquery)>=1.7;if(o)n(e);else{var l=document.createElement("script");l.src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.js",l.onload=l.onreadystatechange=function(){var e=this.readyState;e%26%26"loaded"!==e%26%26"complete"!==e||n(jQuery.noConflict())}}document.getElementsByTagName("head")[0].appendChild(l)}(window.jQuery);
+// grab all of the webmerge fields that are listed in the document.
+var webmergeFields = document.querySelectorAll(".wm-field-name");
 
-// unminfied
-javascript: void
-function(e) {
-    var n = function(e) {
-            for (
-              var n = 1,
-              o = document.querySelectorAll(".wm-field-name"),
-              l = document.querySelectorAll(".slds-input"),
-              t = 0; t < o.length; t++)
+// grab all of the dropdown lists
+var dropdowns = document.querySelectorAll(".slds-input.autocomplete.ui-autocomplete-input");
 
-              convertedFieldName = o[t].innerHTML.split("_").join(" ").split("8").join(":"),
-                console.log(convertedFieldName), l[n].value = convertedFieldName,
-                l[n].focus(), l[n].blur(), n += 2
-        },
-        o = e % 26 % 26e.fn % 26 % 26 parseFloat(e.fn.jquery) >= 1.7;
-    if (o) n(e);
-    else {
-        var l = document.createElement("script");
-        l.src = "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.js", l.onload = l.onreadystatechange = function() {
-            var e = this.readyState;
-            e % 26 % 26 "loaded" !== e % 26 % 26 "complete" !== e || n(jQuery.noConflict())
-        }
+// loop through each dropdown
+for(i = 0; i < dropdowns.length; i++) {
+
+
+  // grab the corresponding webmerge field that matches current dropdown
+  // replace underscores with spaces, 1's with slashes, and 8's with colons
+  // spaces, slashes, and colons are invalid in webmerge fields
+  webmergefield = webmergeFields[i].innerHTML.replace(/_/g, " ").replace(/1/g, "/").replace(/8/g, ":");
+
+  // click on the dropdown to expose options
+  dropdowns[i].click();
+
+  // loop through each option in the unordered list of options.
+  // there is a UL for every dropdown with a uniqe ID of ui-id-1, ui-id-2 ... etc
+  // since there is an existing empty option at the top, add 1 to i to get the right one
+  var options = document.querySelectorAll("#ui-id-"+[i+1]+" a");
+
+  for(j = 0; j < options.length; j++) {
+
+    if(options[j].innerHTML == webmergefield) {
+      // click on the first option that matches the webmerge field, then
+      options[j].click();
+      break; // don't continue looping
     }
-    document.getElementsByTagName("head")[0].appendChild(l)
-}(window.jQuery);
+
+  }
+
+}
+
+// This is the converted code (using http://chriszarate.github.io/bookmarkleter/)
+//javascript:void%20function(){var%20webmergeFields=document.querySelectorAll(%22.wm-field-name%22),dropdowns=document.querySelectorAll(%22.slds-input.autocomplete.ui-autocomplete-input%22);for(i=0;i%3Cdropdowns.length;i++){dropdowns[i].click(),webmergefield=webmergeFields[i].innerHTML.replace(/_/g,%22%20%22).replace(/1/g,%22/%22).replace(/8/g,%22:%22);var%20options=document.querySelectorAll(%22%23ui-id-%22+[i+1]+%22%20a%22);for(j=0;j%3Coptions.length;j++)if(options[j].innerHTML==webmergefield){options[j].click();break}}}();
