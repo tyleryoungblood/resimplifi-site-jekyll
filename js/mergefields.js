@@ -82,7 +82,7 @@ var mergefields =
       {"label":"Parking Spaces Available",  "value":"Property: Parking Available"},
       {"label":"Parking Ratio",             "value":"Property: Parking Ratio"},
       {"label":"Description",               "value":"Property: Description"},
-      {"label":"Total Building Size",       "value":"Total Building Size"},
+      {"label":"Total Building Size",       "value":"Property: Total Building Size"},
       {"label":"Number of Floors",          "value":"Property: Floors"},
       {"label":"Year Built",                "value":"Property: Year Built"},
       {"label":"Common Area Factor",        "value":"Property: Common Area Factor"},
@@ -104,7 +104,7 @@ var mergefields =
     {"label":"subheader",                                 "value":"Suite Information"},
       {"label":"Suite Number",                            "value":"Suite"},
       {"label":"Suite Size",                              "value":"Suite Size"},
-      {"label":"Total Building Size",                     "value":"Total Building Size"},
+      {"label":"Total Building Size",                     "value":"Property: Total Building Size"},
       {"label":"Pro Rata Share Building Opex",            "value":"Pro Rata Share"},
       {"label":"Description of Demised Premises/Suite",   "value":"Suite Description"},
 
