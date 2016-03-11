@@ -23,7 +23,7 @@ var mergefields =
       {"label":"Title",         "value":"Primary Buyer Contact: Title"},
       {"label":"Department",    "value":"Primary Buyer Contact: Department"},
       {"label":"Email",         "value":"Primary Buyer Contact: Email"},
-      {"label":"Fax",           "value":"Primary Buyer Contact: Fax"},
+      {"label":"Fax",           "value":"Primary Buyer Contact: Business Fax"},
       {"label":"Phone",         "value":"Primary Buyer Contact: Business Phone"},
       {"label":"Mobile Phone",  "value":"Primary Buyer Contact: Mobile Phone"},
 
@@ -47,7 +47,7 @@ var mergefields =
       {"label":"Agreement Expiration Date",     "value":"Listing Agreement Expiration Date"},
       {"label":"Listing Term",                  "value":"Listing Agreement Term Months"},
       {"label":"Gross Listing Commission %",    "value":"Gross Commission Percentage"},
-      {"label":"Liating Rental Rate $",         "value":"Listing Monthly Square Foot Rate"},
+      {"label":"Listing Rental Rate $",         "value":"Search Yearly Square Foot Rate"},
       {"label":"Projected Rental Increase",     "value":"Search Yearly Square Foot Rate Increase"},
       {"label":"Projected Term (Years)",        "value":"Term Years"},
 
@@ -62,14 +62,6 @@ var mergefields =
       {"label":"Tenant Agents Commission (estimate)%",    "value":"Tenant Agent Commission"},
       {"label":"Representation Term (months)",            "value":"Listing Agreement Term Months"},
       {"label":"Improvement Allowance",                   "value":"Improvement Allowance"},
-
-    {"label":"subheader",                     "value":"Transaction Info"},
-      {"label":"Lease Commencement Date",     "value":"Lease Commencement Date"},
-      {"label":"Lease Expiration Date",       "value":"Lease Expiration Date"},
-      {"label":"Lease Term (Months)",         "value":"Lease Term Months"},
-      {"label":"Security Deposit (Yes/No)",   "value":"Security Deposit"},
-      {"label":"Security Deposit Amount",     "value":"Security Deposit Amount"},
-      {"label":"Security Deposit Held By",    "value":"Security Deposit Held By"},
 
   //############################################################################
   {"label":"header",                        "value":"Property"},
@@ -91,7 +83,7 @@ var mergefields =
       {"label":"Parking Ratio",             "value":"Property: Parking Ratio"},
       {"label":"Description",               "value":"Property: Description"},
       {"label":"Total Building Size",       "value":"Total Building Size"},
-      {"label":"Number of Floors",          "value":"Property: Floor"},
+      {"label":"Number of Floors",          "value":"Property: Floors"},
       {"label":"Year Built",                "value":"Property: Year Built"},
       {"label":"Common Area Factor",        "value":"Property: Common Area Factor"},
       {"label":"Acreage",                   "value":"Property: Acreage"},
@@ -110,8 +102,8 @@ var mergefields =
   //############################################################################
 
     {"label":"subheader",                                 "value":"Suite Information"},
-      {"label":"Suite Number",                            "value":"Property: Suite Number"},
-      {"label":"Suite Size",                              "value":"Property: Suite Size"},
+      {"label":"Suite Number",                            "value":"Suite"},
+      {"label":"Suite Size",                              "value":"Suite Size"},
       {"label":"Total Building Size",                     "value":"Total Building Size"},
       {"label":"Pro Rata Share Building Opex",            "value":"Pro Rata Share"},
       {"label":"Description of Demised Premises/Suite",   "value":"Suite Description"},
@@ -133,6 +125,15 @@ var mergefields =
       {"label":"Commission to be paid by",                "value":"Commission To Be Paid By"},
       {"label":"Commission Notes",                        "value":"Commission Notes"},
 
+    {"label":"subheader",                     "value":"LeaseTransaction Info"},
+      {"label":"Lease Commencement Date",     "value":"Lease Commencement Date"},
+      {"label":"Lease Expiration Date",       "value":"Lease Expiration Date"},
+      {"label":"Lease Term (Months)",         "value":"Lease Term Months"},
+      {"label":"Security Deposit (Yes/No)",   "value":"Security Deposit"},
+      {"label":"Security Deposit Amount",     "value":"Security Deposit Amount"},
+      {"label":"Security Deposit Held By",    "value":"Security Deposit Held By"},
+      {"label":"Base Year",                   "value":"Base Year"},
+
   //############################################################################
   {"label":"header",        "value":"Contact"},
   //############################################################################
@@ -141,8 +142,8 @@ var mergefields =
       {"label":"Account Name",    "value":"Buyer Account: Account Name"},
       {"label":"Street Address",  "value":"Buyer Account: Billing Street"},
       {"label":"City",            "value":"Buyer Account: Billing City"},
-      {"label":"State",           "value":"Buyer Account: Billing State/Province"},
-      {"label":"Zipcode",         "value":"Buyer Account: Billing Zip/Postal Code"},
+      {"label":"State",           "value":"Buyer Account: Billing State1Province"},
+      {"label":"Zipcode",         "value":"Buyer Account: Billing Zip1Postal Code"},
       {"label":"Country",         "value":"Buyer Account: Country"},
 
     {"label":"subheader",         "value":"Buyer Contact (Primary)"},
@@ -160,8 +161,8 @@ var mergefields =
       {"label":"Account Name",    "value":"Seller Account: Account Name"},
       {"label":"Street Address",  "value":"Seller Account: Billing Street"},
       {"label":"City",            "value":"Seller Account: Billing City"},
-      {"label":"State",           "value":"Seller Account: Billing State/Province"},
-      {"label":"Zipcode",         "value":"Seller Account: Billing Zip/Postal Code"},
+      {"label":"State",           "value":"Seller Account: Billing State1Province"},
+      {"label":"Zipcode",         "value":"Seller Account: Billing Zip1Postal Code"},
       {"label":"Country",         "value":"Seller Account: Country"},
 
     {"label":"subheader",     "value":"Seller Contact (Primary)"},
@@ -179,8 +180,8 @@ var mergefields =
       {"label":"Account Name",    "value":"Landlord Account: Account Name"},
       {"label":"Street Address",  "value":"Landlord Account: Billing Street"},
       {"label":"City",            "value":"Landlord Account: Billing City"},
-      {"label":"State",           "value":"Landlord Account: Billing State/Province"},
-      {"label":"Zipcode",         "value":"Landlord Account: Billing Zip/Postal Code"},
+      {"label":"State",           "value":"Landlord Account: Billing State1Province"},
+      {"label":"Zipcode",         "value":"Landlord Account: Billing Zip1Postal Code"},
       {"label":"Country",         "value":"Landlord Account: Country"},
 
     {"label":"subheader",     "value":"Landlord Contact (Primary)"},
@@ -198,8 +199,8 @@ var mergefields =
       {"label":"Account Name",    "value":"Tenant Account: Account Name"},
       {"label":"Street Address",  "value":"Tenant Account: Billing Street"},
       {"label":"City",            "value":"Tenant Account: Billing City"},
-      {"label":"State",           "value":"Tenant Account: Billing State/Province"},
-      {"label":"Zipcode",         "value":"Tenant Account: Billing Zip/Postal Code"},
+      {"label":"State",           "value":"Tenant Account: Billing State1Province"},
+      {"label":"Zipcode",         "value":"Tenant Account: Billing Zip1Postal Code"},
       {"label":"Country",         "value":"Tenant Account: Country"},
 
     {"label":"subheader",     "value":"Tenant Contact (Primary)"},
@@ -217,8 +218,8 @@ var mergefields =
       {"label":"Account Name",    "value":"Co-Broker Account: Account Name"},
       {"label":"Street Address",  "value":"Co-Broker Account: Billing Street"},
       {"label":"City",            "value":"Co-Broker Account: Billing City"},
-      {"label":"State",           "value":"Co-Broker Account: Billing State/Province"},
-      {"label":"Zipcode",         "value":"Co-Broker Account: Billing Zip/Postal Code"},
+      {"label":"State",           "value":"Co-Broker Account: Billing State1Province"},
+      {"label":"Zipcode",         "value":"Co-Broker Account: Billing Zip1Postal Code"},
       {"label":"Country",         "value":"Co-Broker Account: Country"},
 
     {"label":"subheader",     "value":"Co-Broker Contact (Primary)"},
@@ -232,11 +233,25 @@ var mergefields =
       {"label":"Phone",           "value":"Primary Co-Broker Contact: Business Phone"},
       {"label":"Mobile Phone",    "value":"Primary Co-Broker Contact: Mobile Phone"},
 
+    {"label":"subheader",     "value":"Created By (The user who created the record)"},
+      {"label":"Full Name",       "value":"Created By: Full Name"},
+      {"label":"First Name",      "value":"Created By: First Name"},
+      {"label":"Last Name",       "value":"Created By: Last Name"},
+      {"label":"Company Name",    "value":"Created By: Company Name"},
+      {"label":"Street Address",  "value":"Created By: Street"},
+      {"label":"City",            "value":"Created By: City"},
+      {"label":"State",           "value":"Created By: State1Province"},
+      {"label":"Zip",             "value":"Created By: Zip1Postal Code"},
+      {"label":"Email",           "value":"Created By: Email"},
+      {"label":"Phone",           "value":"Created By: Phone"},
+      {"label":"Fax",             "value":"Created By: Fax"},
+      {"label":"Cell",           "value":"Created By: Cell"},
+
   //############################################################################
   {"label":"header",        "value":"Date"},
   //############################################################################
 
-    {"label":"subheader",                 "value":'Date Formats ( |date_format:"m/d/Y" )'},
+    {"label":"subheader",                 "value":'Date Formats'},
       {"label":"Listing Commencement",    "value":"Listing Commencement Date"},
       {"label":"Listing Expiration",      "value":"Listing Expiration Date"},
       {"label":"Create Date",             "value":"Create Date"},
@@ -247,6 +262,8 @@ var mergefields =
       {"label":"Option to Expand",        "value":"Option to Expand"},
       {"label":"Right of First Refusal",  "value":"Right of First Refusal"},
       {"label":"Due Diligence",           "value":"Due Diligence"},
+      {"label":"text",                    "value": '<code>|date_format\:"F j, Y"</code> produces March 1, 2016.'},
+      {"label":"text",                    "value": '<code>|date_format\:"m/d/Y"</code> produces 03/01/2016.'},
 
   //############################################################################
   {"label":"header",        "value":"Rent Table"},
