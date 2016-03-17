@@ -36,7 +36,7 @@ var mergefields =
       {"label":"Agreement Expiration Date",     "value":"Listing Agreement Expiration Date"},
       {"label":"Listing Term",                  "value":"Listing Agreement Term Months"},
       {"label":"Gross Listing Commission %",    "value":"Gross Commission Percentage"},
-      {"label":"Sales Price",                   "value":"Listing Sales Price"},
+      {"label":"Sales Price",                   "value":"Transaction Size"},
 
   //############################################################################
   {"label":"header",                            "value":"Landlord"},
@@ -223,15 +223,15 @@ var mergefields =
       {"label":"Country",         "value":"Co-Broker Account: Country"},
 
     {"label":"subheader",     "value":"Co-Broker Contact (Primary)"},
-      {"label":"Full Name",       "value":"Primary Co-Broker Contact: Full Name"},
-      {"label":"First Name",      "value":"Primary Co-Broker Contact: First Name"},
-      {"label":"Last Name",       "value":"Primary Co-Broker Contact: Last Name"},
-      {"label":"Title",           "value":"Primary Co-Broker Contact: Title"},
-      {"label":"Department",      "value":"Primary Co-Broker Contact: Department"},
-      {"label":"Email",           "value":"Primary Co-Broker Contact: Email"},
-      {"label":"Fax",             "value":"Primary Co-Broker Contact: Fax"},
-      {"label":"Phone",           "value":"Primary Co-Broker Contact: Business Phone"},
-      {"label":"Mobile Phone",    "value":"Primary Co-Broker Contact: Mobile Phone"},
+      {"label":"Full Name",       "value":"Co-Broker Contact: Full Name"},
+      {"label":"First Name",      "value":"Co-Broker Contact: First Name"},
+      {"label":"Last Name",       "value":"Co-Broker Contact: Last Name"},
+      {"label":"Title",           "value":"Co-Broker Contact: Title"},
+      {"label":"Department",      "value":"Co-Broker Contact: Department"},
+      {"label":"Email",           "value":"Co-Broker Contact: Email"},
+      {"label":"Fax",             "value":"Co-Broker Contact: Fax"},
+      {"label":"Phone",           "value":"Co-Broker Contact: Business Phone"},
+      {"label":"Mobile Phone",    "value":"Co-Broker Contact: Mobile Phone"},
 
     {"label":"subheader",     "value":"Created By (The user who created the record)"},
       {"label":"Full Name",       "value":"Created By: Full Name"},
