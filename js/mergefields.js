@@ -89,9 +89,9 @@ var mergefields =
       {"label":"Acreage",                   "value":"Property: Acreage"},
 
     {"label":"subheader",         "value":"Images"},
-      {"label":"Primary Image",   "value":"Property: Image Primary"},
-      {"label":"Secondary Image", "value":"Property: Image Secondary"},
-      {"label":"Tertiary Image",  "value":"Property: Image Tertiary"},
+      {"label":"Primary Image",   "value":"Property: Image Primary Public"},
+      {"label":"Secondary Image", "value":"Property: Image Secondary Public"},
+      {"label":"Tertiary Image",  "value":"Property: Image Tertiary Public"},
 
     {"label":"text",            "value":"Please follow directions <a href='https://www.webmerge.me/blog/embed-images-in-word-docx'>here</a> and remember to append <code>|image:1:png</code> to the image placeholder. Your finished merge variable should look something like <code>{$Property_Image_Primary|image:1:png}</code>."},
     {"label":"text",            "value":"View the linked image below in a new tab and modify the height/width parameters so that the image fits in your document. Once properly sized, right-click and copy/paste into your document.<br><br><a href='https://www.webmerge.me/images/image.php?width=300&amp;height=100&amp;type=png'>https://www.webmerge.me/images/image.php?width=300&amp;height=100&amp;type=png</a>"},
