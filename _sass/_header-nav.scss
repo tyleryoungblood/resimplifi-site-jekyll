@@ -1,65 +1,133 @@
 header {
+  display: flex;
   background-color: $steel-blue;
   color: $bright-color;
-  height: 60px;
+  padding-top: 10px;
+
+  @media(min-width: 600px) {
+    padding: 10px 0;
+  }
 }
+
 nav {
-  width: 90%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-nav .logo {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  color: $steel-blue;
-  line-height: 50px;
-  margin: 10px;
-  text-align: center;
-}
-nav ul {
-  display: inline-block;
-  top: 50%;
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  padding: 5px 10px;
-  text-decoration: none;
-  color: $bright-color;
-  padding: 5px 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
-  font-size: 1em;
-  font-weight: bold;
+
+  @media(min-width: 600px) {
+    flex-direction: row;
+    align-self: flex-end;
+    width: 90%;
+  }
+
+  a.logo {
+    display: inline-block;
+    height:37px;
+    width: 100px;
+  }
+
+  ul {
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 2px solid $steel-blue;
+
+    @media(min-width: 600px) {
+      width: auto;
+      margin-top: 0;
+    }
+
+
+    li {
+
+      line-height: 100%;
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid $bright-color;
+
+      @media(min-width: 600px) {
+        display: inline-block;
+        border-top: none;
+        width: auto;
+      }
+
+      a {
+        padding: 10px 0;
+        text-decoration: none;
+        color: $bright-color;
+        margin: 0 auto;
+        font-weight: normal;
+        font-size: 1.4em;
+        display: block;
+        width: 100%;
+
+        &.active, &.active:hover {
+          color: $pumpkin;
+        }
+
+        &:hover {
+          background-color: $bright-color;
+          color: $steel-blue;
+        }
+
+        @media(min-width: 600px) {
+          padding: 0 10px;
+          //font-size: 1em;
+          &:hover {
+            text-decoration: underline;
+            background-color: $steel-blue;
+            color: $bright-color;
+          }
+        }
+
+      }
+
+    }
+
+  }
 }
-nav ul li a:hover {
-  text-decoration: underline;
-}
+
 nav ul li a.button {
+  background-color: $steel-blue;
   color: $bright-color;
-  font-size: 1em;
-  border: 2px solid $bright-color;
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
+  font-size: 1.4em;
+  font-weight: normal;
+  border:none;
+  padding: 10px 0;
+  margin: 0;
+
+  @media(min-width: 600px) {
+    margin-left: 1em;
+  }
 }
+
 nav ul li a.button:hover {
   background-color: $bright-color;
   color: $steel-blue;
-  -webkit-transition: color 0.3s, background-color 0.3s;
+  padding: 10px 20px;
+}
+
+@media(min-width: 600px){
+  nav ul li a.button {
+    color: $bright-color;
+    background-color: $steel-blue;
+    //font-size: 1em;
+    border: 2px solid $bright-color;
+    padding: 10px 20px;
+  }
+  nav ul li a.button:hover {
+    background-color: $bright-color;
+    color: $steel-blue;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+}
+
+nav ul li a,
+nav ul li a:hover,
+nav ul li a.button,
+nav ul li a.button:hover {
   transition: color 0.3s, background-color 0.3s;
-  text-decoration: none;
 }

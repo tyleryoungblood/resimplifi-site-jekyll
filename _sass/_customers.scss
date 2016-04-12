@@ -1,0 +1,25 @@
+section.customers article {
+  flex-grow: 6;
+
+  &.form {
+    flex-grow: 2;
+    @media(min-width: 600px) {
+      max-width: 400px;
+    }
+
+  }
+}
+
+article.form {
+  background-color: $steel-blue;
+  padding: 3em;
+
+  h1 {
+    color: $bright-color;
+  }
+
+  hr {
+    background-color: $bright-color;
+  }
+
+}

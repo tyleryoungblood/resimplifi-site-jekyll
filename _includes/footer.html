@@ -1,24 +1,23 @@
 <footer class="footer">
 
-  <section class="newsletter">
-    <div class="logo">
-      <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-dark.svg"></a>
-    </div>
-    <form action="">
-      <input type="text">
+  <section class="signup">
+    <a class="logo" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-dark.svg"></a>
+    <!-- <form action="">
+      <input type="text" placeholder="Newsletter Signup">
       <input type="submit">
-    </form>
+    </form> -->
   </section>
 
   <section class="links">
-
     <ul>
-      <li><a href="{{ site.baseurl }}/pricing">Pricing</a></li>
-      <li><a href="{{ site.baseurl }}/customers">Customers</a></li>
-      <li><a href="{{ site.baseurl }}/About Us">About Us</a></li>
-      <!-- <li><a href="{{ site.baseurl }}/login">Log In</a></li> -->
+      {% for item in site.navigation %}
+          {% assign class = nil %}
+          {% if page.url contains item.url %}
+              {% assign class = 'active' %}
+          {% endif %}
+          <li><a href="{{ site.baseurl }}/{{ item.url }}" class="{{ class }}">{{ item.title }}</a></li>
+      {% endfor %}
     </ul>
-
   </section>
 
   <section class="social">
@@ -28,7 +27,7 @@
     {% if site.footer-links.flickr %}<a href="https://www.flickr.com/{{ site.footer-links.flickr }}"><i class="svg-icon flickr"></i></a>{% endif %}
     {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}"><i class="svg-icon github"></i></a>{% endif %}
     {% if site.footer-links.instagram %}<a href="https://instagram.com/{{ site.footer-links.instagram }}"><i class="svg-icon instagram"></i></a>{% endif %}
-    {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"><i class="svg-icon linkedin"></i></a>{% endif %}
+    {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/{{ site.footer-links.linkedin }}"><i class="svg-icon linkedin"></i></a>{% endif %}
     {% if site.footer-links.pinterest %}<a href="https://www.pinterest.com/{{ site.footer-links.pinterest }}"><i class="svg-icon pinterest"></i></a>{% endif %}
     {% if site.footer-links.rss %}<a href="{{ site.baseurl }}/feed.xml"><i class="svg-icon rss"></i></a>{% endif %}
     {% if site.footer-links.twitter %}<a href="https://www.twitter.com/{{ site.footer-links.twitter }}"><i class="svg-icon twitter"></i></a>{% endif %}
@@ -38,7 +37,7 @@
   </section>
 
   <section class="copyright">
-    <p>Copyright <script>document.write(new Date().getFullYear())</script> REsimplifi</p>
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> REsimplifi, Inc. All rights reserved.</p>
   </section>
 
 </footer>

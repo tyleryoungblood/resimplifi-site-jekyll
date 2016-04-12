@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="../js/mergefields.js"></script>
+    <script type="text/javascript" scr="../js/copy.js"></script>
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Webmerge Fields</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- prevent search engines from indexing page -->
+    <script>
+      var passEntered = prompt('Please enter password:');
+
+      // NOTE: this is not secure. Anyone can view source and see password
+      // The intention is to prevent search engine indexing of the page
+      if (passEntered !== 'r3s1mplifi!') {
+        window.location = 'http://www.resimplifi.com';
+      }
+    </script>
+
+    <a class="logo" href="http://www.resimplifi.com"><img src="../images/logo-dark.svg" width="100" height="37" alt=""></a>
+    <ul id="nav-tabs" class="nav nav-tabs">
+      <!-- the demo content below will be replaced by createMergeFieldList() -->
+      <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+      <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    </ul>
+
+    <div id="tab-content" class="tab-content">
+      <!-- the demo content below will be replaced by createMergeFieldList() -->
+      <div id="home" class="tab-pane fade in active">
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+
+
+  <p id="mergeFieldList"></p>
+
+  <script>
+
+//create function to iterate through mergefields.js file
+  function createMergeFieldList() {
+    var i = 0;
+    var id = "";
+    var webmergeField = ""; // will contain a list of merge fields
+    var navTabs = ""; // will contain each tab as defined by "label":"header" in mergefields.js
+    var tabContent = ""; // will contain the list of merge fields for each tab
+
+    for(i = 0; i < mergefields.length; i++) {
+      if(mergefields[i].label === "header") {
+        // don't insert closing div until *after* first iteration
+        if(i !== 0) tabContent += '</div>';
+
+        // I'm regex averse ... remove all spaces, colons, and parens ... the hard way
+        id = mergefields[i].value.split(' ').join('').split(':').join('').split('(').join('').split(')').join('');
+
+        // Create a new tab using the value of the object labeled "header"
+
+        if (i === 0) { // first tab - set tab and tab contents to active
+          navTabs += '<li class="active"><a data-toggle="tab" href="#' + id + '">' + mergefields[i].value + '</a></li>';
+          tabContent += '<div id="' + id + '" class="tab-pane fade in active flexbox">';
+        } else { // not first tab - remove active class
+          navTabs += '<li><a data-toggle="tab" href="#' + id + '">' + mergefields[i].value + '</a></li>';
+          tabContent += '<div id="' + id + '" class="tab-pane fade in flexbox">';
+        }
+
+        tabContent += '<h1>' + mergefields[i].value + ' Merge Fields</h1>';
+
+      } else if(mergefields[i].label === "subheader") {
+        if(i > 2) { tabContent += '</section>'};
+        tabContent += '<section class="mergefieldGroup clearfix col"><h2>' + mergefields[i].value + '</h2>';
+
+      } else if(mergefields[i].label === "text") {
+        tabContent += '<p>' + mergefields[i].value + '</p>';
+
+      } else {
+        // same as above, but these won't have parens to remove
+        id = mergefields[i].value.split(' ').join('').split(':').join('').split('(').join('').split(')').join('').split('/').join('');
+
+        // add required "{$ }" to beginning and end of merge field, and replace spaces with _
+        webmergeField = "{$" + mergefields[i].value.split(' ').join('_').split('(').join('').split(')').join('').split(':').join('8').split('/').join('') + "}";
+        webmergeField = webmergeField.split('|date_format8mdY').join('|date_format:\"m/d/Y\"'); //fix date filter so it doesn't have the colon replaced with an 8 or the quotes removed.
+
+
+        //create visible label, textbox, and copy button for each merge field
+        tabContent += '<label for="#' + id + '">' + mergefields[i].label + '</label>';
+        tabContent += '<input type="text" id="' + id + '" value="' + webmergeField + '" />';
+        tabContent += '<button data-copytarget="#' + id + '">copy</button>';
+      }
+
+    }
+
+    //document.getElementById("mergeFieldList").innerHTML = text;
+    document.getElementById("nav-tabs").innerHTML = navTabs;
+    document.getElementById("tab-content").innerHTML = tabContent;
+  }
+
+  </script>
+
+  <script>
+    /*
+    Copy text from any appropriate field to the clipboard
+    By Craig Buckler, @craigbuckler
+    use it, abuse it, do whatever you like with it!
+    */
+    (function() {
+
+    'use strict';
+
+    // click events
+    document.body.addEventListener('click', copy, true);
+
+    // event handler
+    function copy(e) {
+
+      // find target element
+      var
+        t = e.target,
+        c = t.dataset.copytarget,
+        inp = (c ? document.querySelector(c) : null);
+
+      // is element selectable?
+      if (inp && inp.select) {
+
+        // select text
+        inp.select();
+
+        try {
+          // copy text
+          document.execCommand('copy');
+          inp.blur();
+
+          // copied animation
+          t.classList.add('copied');
+          setTimeout(function() { t.classList.remove('copied'); }, 1500);
+        }
+        catch (err) {
+          alert('please press Ctrl/Cmd+C to copy');
+        }
+
+      }
+
+    }
+
+    })();
+  </script>
+
+    <script>
+      createMergeFieldList();
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

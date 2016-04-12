@@ -1,0 +1,87 @@
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width:350px;
+  margin: 0 auto 3em auto;
+
+  .button {
+    width: calc(50% - 0.25em);
+  }
+}
+
+a.button, input[type=submit] {
+  display: block;
+  width: 100%;
+  margin: .5em 0;
+  text-align: center;
+  text-decoration: none;
+  color: $steel-blue;
+  border: 2px solid $steel-blue;
+  padding: 5px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: $bright-color;
+  transition: color 0.3s, background-color 0.3s;
+
+  @media(min-width: 600px) {
+    display: inline-block;
+    width: auto;
+  }
+
+
+  &:hover {
+    background-color: $steel-blue;
+    color: $bright-color;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  &.light-button {
+    color: $bright-color;
+    border: 2px solid $bright-color;
+
+    &:hover {
+      background-color: $bright-color;
+      color: $steel-blue;
+    }
+  }
+
+  &.big-button {
+    width: 350px;
+    margin: 2em auto 0.3em auto;
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1.8em;
+
+  }
+}
+
+input {
+  margin: 1em 0;
+  height: 3em;
+  padding: 0 1em;
+}
+
+.form {
+  text-align: center;
+
+  input {
+    width: 100%;
+  }
+}
+
+.form input[type=submit] {
+  transition: color 0.3s, background-color 0.3s;
+  height: 39px;
+
+}
+.form input[type=submit]:hover {
+  transition: color 0.3s, background-color 0.3s;
+  border: 2px solid $bright-color;
+  height: 39px;
+}
+
+input[type=submit] {
+  height: 32px;
+  margin: 1em 0;
+}
