@@ -8,44 +8,52 @@ hero-tagline:
 <section class="about">
 
   <section>
-    <article>
-      <img src="../images/REsimplifi_infographic_updated.svg" alt="">
-    </article>
+
     <article>
       <div class="lighten">
-        <h2>REsimplifi simplifies the Commercial Real Estate process:</h2>
-        <ul>
-          <li>Reducing agent paperwork
-            <ul>
-              <li>administrative work</li>
-            </ul>
-          </li>
-          <li>Eliminating redundant manual entry
-            <ul>
-              <li>user enters information one time and documents are populated throughout a process</li>
-            </ul>
-          </li>
-          <li>Reducing E&amp;O Liability
-            <ul>
-              <li>decreasing risk of errors and omissions in tracking commissions and contract dates</li>
-            </ul>
-          </li>
-          <li>Increasing accuracy in sales forecasting
-            <ul>
-              <li>eliminating the human element in estimating the percent of a deal closed</li>
-            </ul>
-          </li>
-          <li>Ramp up new agents faster
-            <ul>
-              <li>clearly outlining the transaction process at the beginning of the sales cycle</li>
-            </ul>
-          </li>
-        </ul>
+        <h1>How is REsimplifi different?</h1>
+        <h3>As former agents we knew what wasn't working so ....</h3>
+
+        <p>We spent countless hours with other agents developing an intuitive and easy to use application. We found that we could best serve the Commercial Real Estate community by lessening the administrative burden on agents by first reducing the amount of paper and the manual entry required to complete a transaction.</p>
+
+        <p>At our core is this idea of automating your transaction process. REsimplifi is the industry's first process, transaction, and document management system. <em>We are not a CRM.</em> We start and end with documents. Your documents. We start with the processes that you already have in place. We take the documents that you already use and build a path to success based upon how you run your business. Things like contact and property details are by-products of our application capturing the detail necessary to complete your transaction documents. You enter your information one time and we take care of all the documents you need to support your client in selling or leasing their property.</p>
+
+        <p>Effective agents do not need complicated tools designed for the desk employees of a traditional industry. At REsimplifi we understand our business is different. We take a fresh approach to the transaction management process. Our product is designed to be elegantly simple. We help you spend less time at your desk and more time closing business.</p>
+
       </div>
-      <!-- <img src="../images/documents.png" alt=""> -->
     </article>
 
-
   </section>
+
+</section>
+
+<section class="team">
+
+  <h1>Meet the REsimplifi Team</h1>
+
+  <section class="members">
+    <article class="member">
+      <img src="{{ site.baseurl }}/images/team/Henry.png" alt="Henry Moore">
+      <span class="name">Henry Moore</span>
+      <span class="title">Co-Founder &amp; CEO</span>
+      <p>A blurb about Henry ...</p>
+    </article>
+
+    <article class="member">
+      <img src="{{ site.baseurl }}/images/team/David.png" alt="David Collier">
+      <span class="name">David Collier</span>
+      <span class="title">Co-Founder &amp; CFO</span>
+      <p>A blurb about David ...</p>
+    </article>
+
+    <article class="member">
+      <img src="{{ site.baseurl }}/images/team/Tyler.png" alt="Tyler Youngblood">
+      <span class="name">Tyler Youngblood</span>
+      <span class="title">Web &amp; Application Developer</span>
+      <p>A blurb about Tyler ...</p>
+    </article>
+  </section>
+
+
 
 </section>
