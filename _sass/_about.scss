@@ -2,11 +2,20 @@
   background: url("images/retail2.png");
   background-size: cover;
   background-position: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 4em;
+  }
 
   h2 {
     color: $steel-blue;
     font-size: 2em;
     font-weight: bold;
+  }
+
+  p {
+    text-align: justify;;
   }
 
   img {
@@ -17,51 +26,48 @@
     width: 100%;
     max-width: 1024px;
     flex-direction: column;
-
-    @media(min-width: 768px) {
-      flex-direction: row;
-    }
-
   }
 
   article {
 
     margin: 2em auto;
     width: 100%;
-
-    @media(min-width: 768px) {
-      margin: auto 2em;
-    }
-
   }
 
-  ul {
-    text-align: left;
-    list-style-type: disc;
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
+}
 
-    li {
-      font-weight: bold;
+.team {
+  display: block;
+
+  h1 {
+    text-align: center;
+  }
+
+  .members {
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      margin-bottom: 1em;
+    }
+
+    p {
+      margin-top: 1em;
+    }
+
+    .name {
+      text-transform: uppercase;
       font-size: 1.5em;
-      line-height: 1.5em;
-      margin: .5em 0;
-
-      ul {
-        list-style-type: none;
-        li {
-          font-weight: normal;
-          font-size: .9em;
-          padding-left: 1.5em;
-          margin-top: 0;
-
-          &:before {
-            content: "- "
-          }
-        }
-      }
+      display: block;
+      color: $steel-blue;
 
     }
+
+    .title {
+      font-weight: bold;
+    }
   }
+
+
+
 }
