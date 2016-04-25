@@ -36,21 +36,18 @@ hero-tagline:
       <img src="{{ site.baseurl }}/images/team/Henry.png" alt="Henry Moore">
       <span class="name">Henry Moore</span>
       <span class="title">Co-Founder &amp; CEO</span>
-      <p>A blurb about Henry ...</p>
     </article>
 
     <article class="member">
       <img src="{{ site.baseurl }}/images/team/David.png" alt="David Collier">
       <span class="name">David Collier</span>
       <span class="title">Co-Founder &amp; CFO</span>
-      <p>A blurb about David ...</p>
     </article>
 
     <article class="member">
       <img src="{{ site.baseurl }}/images/team/Tyler.png" alt="Tyler Youngblood">
       <span class="name">Tyler Youngblood</span>
-      <span class="title">Web &amp; Application Developer</span>
-      <p>A blurb about Tyler ...</p>
+      <span class="title">Lead Developer</span>
     </article>
   </section>
 
