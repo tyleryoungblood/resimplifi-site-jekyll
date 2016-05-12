@@ -16,6 +16,12 @@ hero-tagline:
 
   <section class="logos">
 
+    <span class="featured">
+      <a href="http://sct.epubxp.com/i/669097-may-2016/197" target="_blank">
+        <img src="../images/press/sct-may-2016.jpg" alt="REsimplifi joins SC Launch program">
+      </a>
+    </span>
+
     <a href="http://www.mirabelsmagazinecentral.com/DigitalEdition/index.html?id=c721c8ab-6d1e-4f4c-ac62-b90d85ceceb8&pn=30&pv=s">
       <img src="../images/press/columbia-business-monthly.png" alt="SCRA Technology Ventures Accepts REsimplifi into SC Launch program">
     </a>
