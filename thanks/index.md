@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: thanks
 title:
 permalink: /thanks/
 hero-title:
