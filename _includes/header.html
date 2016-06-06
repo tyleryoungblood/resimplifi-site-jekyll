@@ -1,25 +1,6 @@
-<!-- <div class="wrapper-masthead">
-  <div class="container">
-    <header class="masthead clearfix">
-      <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-      <div class="site-info">
-        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-        <p class="site-description">{{ site.description }}</p>
-      </div>
-
-      <nav>
-        <a href="{{ site.baseurl }}/pricing">Pricing</a>
-        <a href="{{ site.baseurl }}/customers">Customers</a>
-        <a href="{{ site.baseurl }}/about">About Us</a>
-      </nav>
-    </header>
-  </div>
-</div> -->
-
 <header>
   <nav>
-    <a class="logo" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-light.svg" alt="REsimplifi, Inc. Logo"></a>
+    <a class="logo" href="{{ site.baseurl }}/"><img alt="REsimplifi Logo" src="{{ site.baseurl }}/images/logo-light.svg" alt="REsimplifi, Inc. Logo"></a>
     <ul>
       {% for item in site.navigation %}
           {% assign class = nil %}
@@ -31,16 +12,4 @@
       <li><a href="https://resimplifi.cloudforce.com/" class="button">Log In</a></li>
     </ul>
   </nav>
-
-  <!-- <nav>
-    <a class="logo" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-light.svg" alt="REsimplifi, Inc. Logo"></a>
-
-    <ul>
-      <li><a href="{{ site.baseurl }}/pricing">Pricing</a></li>
-      <li><a href="{{ site.baseurl }}/customers">Customers</a></li>
-      <li><a href="{{ site.baseurl }}/about">About Us</a></li>
-      <li><a href="" class="button">Log In</a></li>
-    </ul>
-
-  </nav> -->
 </header>
