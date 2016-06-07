@@ -93,6 +93,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-minifier # Minify HTML, XML, CSS, and JS using yui-compressor and htmlcompressor
+  - jekyll-email-protect # obfuscate email via this liquid filter
 
 jekyll-minifier:
   exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
