@@ -1,12 +1,9 @@
-.hero {
-  background: url("images/hero.svg");
-}
-
 .about, .contact, .thanks, .press {
   min-height: calc(100vh - 60px - 255px);
 }
 
 .hero {
+  background: url("images/hero.png");
   min-height: calc(100vh - 60px);
 
   .tagline {
