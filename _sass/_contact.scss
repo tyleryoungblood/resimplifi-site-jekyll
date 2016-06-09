@@ -11,7 +11,7 @@
   article {
     margin: auto 1em;
 
-    .contact-blurb {
+    &.contact-blurb {
       display: flex;
       flex-direction: column;
       justify-content: center;
