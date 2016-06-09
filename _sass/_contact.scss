@@ -10,7 +10,13 @@
 
   article {
     margin: auto 1em;
-    //background-color: transparentize(#fff, .5);
+
+    .contact-blurb {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
 
   }
 }
