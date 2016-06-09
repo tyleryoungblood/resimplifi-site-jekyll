@@ -24,7 +24,7 @@ hero-tagline:
       </form>
     </article>
 
-    <article class="flex-order-1 lighten">
+    <article class="contact-blurb flex-order-1 lighten">
       <h1>Get in touch!</h1>
       <h2>Please contact us for product and pricing information using the form on this page, or give us a call</h2><h2><a style="font-size: larger" href="tel:1-888-968-8998">(888) 968 - 8998</a></h2>
     </article>
