@@ -1,5 +1,9 @@
-.about, .contact, .thanks, .press {
+.about, .contact, .thanks {
   height: calc(100vh - 60px - 255px);
+}
+
+.press {
+  min-height: calc(100vh - 60px - 255px);
 }
 
 .hero {
